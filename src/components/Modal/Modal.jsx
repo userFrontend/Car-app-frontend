@@ -1,8 +1,14 @@
 import React from 'react'
+import './Modal.css'
 
-const Modal = () => {
+const Modal = ({children, funct}) => {
   return (
-    <div>Modal</div>
+    <div className='modal'>
+        <div className="modal-body">
+          <button onClick={funct}>X</button>
+          {children}
+        </div>
+    </div>
   )
 }
 

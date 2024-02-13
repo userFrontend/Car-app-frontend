@@ -6,7 +6,7 @@ const API = axios.create({baseURL: serverUrl});
 
 export const addProd = (data, {method}) => {
     const token = localStorage.getItem("access_token")
-    return API.post(`${method}`, data, {headers: {token}})}; 
+    return API.post(`/api/${method}`, data, {headers: {token}})}; 
 export const addComment = (id, data, {method}) => {
     const token = localStorage.getItem("access_token")
-    return API.post(`${method}/${id}`, data, {headers: {token}})}; 
+    return API.post(`/api/${method}/${id}`, data, {headers: {token}})}; 

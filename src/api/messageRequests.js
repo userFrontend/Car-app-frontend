@@ -6,4 +6,4 @@ const API = axios.create({baseURL: serverUrl});
 
 export const messageData = (id, {method}) => {
     const token = localStorage.getItem("access_token")
-    return API.get(`${method}/${id}`, {headers: {token}})}; 
+    return API.get(`/api/${method}/${id}`, {headers: {token}})}; 
