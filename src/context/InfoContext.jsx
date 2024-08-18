@@ -1,5 +1,4 @@
-import { toast } from "react-toastify";
-import { GetAllCars } from "../api/getRequests";
+import { getAllCars } from "../api/getRequests";
 
 const { createContext, useContext, useState, useEffect } = require("react");
 
@@ -9,49 +8,38 @@ export const useInfoContext = () => useContext(InfoContext)
 
 export const InfoProvider = ({children}) => {
     const [currentUser, setCurrentUser] = useState(JSON.parse(localStorage.getItem("profile")) || null)
-    const serverUrl = process.env.REACT_APP_SERVER_URL;
     const [cars, setCars] = useState([])
     const [categorys, setCategorys] = useState([])
-    const [categoryId, setCategoryId] = useState()
-    const [loading, setLoad] = useState(false)
-    const toggle = () => setLoad(!loading)
-  
-    useEffect(()=>{
-        const getCars = async () => {
-        try {
-            const {data} = await GetAllCars({method: 'car'}) 
-            setCars(data.cars)
-        } catch (error) {
-            if(error.response.data.message === 'jwt expired'){
-                exit()
+    const [load, setLoad] = useState(false)
+
+    const serverUrl = process.env.REACT_APP_SERVER_URL
+
+    const toggle = () => setLoad(!load)
+
+    useEffect(() => {
+        const getAll = async () => {
+            try {
+                const resCar = await getAllCars('car')
+                const resCategory = await getAllCars('category')
+                setCars(resCar.data.cars)
+                setCategorys(resCategory.data.categorys)
+            } catch (error) {
+                
             }
         }
-        }
-        getCars()
-        const getCategory = async () => {
-        try {
-            const {data} = await GetAllCars({method: 'category'}) 
-            setCategorys(data.categorys)
-        } catch (error) {
-            if(error.response.data.message === 'jwt expired'){
-                exit()
-            }
-        }
-        }
-        getCategory()
-    },[loading])
+        getAll()
+    },[currentUser, load])
     
     const exit = () => {
         localStorage.clear()
         setCurrentUser(null)
-        toast.dismiss()
-        toast.info('you have successfully logged out')
+    
     }
 
      const value = {
-        currentUser, setCurrentUser,
-        exit, serverUrl, cars, setCars, toggle,
-        categorys, setCategorys, categoryId, setCategoryId
+        exit, currentUser, setCurrentUser,
+        serverUrl, cars, setCars,
+        categorys, setCategorys, toggle
     }
  
     return (
