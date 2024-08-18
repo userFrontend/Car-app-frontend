@@ -4,7 +4,6 @@ import { useInfoContext } from '../../context/InfoContext'
 import { addProd } from '../../api/addRequests'
 import { Link } from 'react-router-dom'
 import { toast } from 'react-toastify'
-import { useState } from 'react'
 import Loader from '../../components/Loader/Loader'
 
 const Category = () => {
