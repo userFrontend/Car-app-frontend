@@ -20,7 +20,7 @@ const Explore = () => {
                   <Link>Crossovers & SUVs</Link>
                   <Link>Electrified</Link>
               </div>
-              <div className='box-models container'>
+              <div className='box-models'>
                   <SlickCarousel speed={2000} sm={1} md={1} lg={2} xl={2}>
                       {cars.length > 0 && cars.map(car => {
                           return(

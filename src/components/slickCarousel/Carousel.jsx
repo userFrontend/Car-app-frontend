@@ -9,7 +9,7 @@ const SlickCarousel = ({children, speed, sm, md, lg, xl, fade}) => {
     <div className='slick-carousel'>
             <Slider responsive= { [
                 {
-                breakpoint: 320,
+                breakpoint: 460,
                 settings: {
                     fade: fade ? true : false,
                     speed: 500,
@@ -18,6 +18,7 @@ const SlickCarousel = ({children, speed, sm, md, lg, xl, fade}) => {
                     infinite: true,
                     autoplay: true,
                     autoplaySpeed: speed,
+                    arrows: false
                 }
                 },
                 {
