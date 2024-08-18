@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Cars.css'
 import Card from '../../components/Card/Card'
 import { useInfoContext } from '../../context/InfoContext'
@@ -27,8 +27,6 @@ const Cars = () => {
       toast.error(err?.response?.data.message)
     }
   }
-
-  console.log(cars);
 
   return (
    <div className="container">
