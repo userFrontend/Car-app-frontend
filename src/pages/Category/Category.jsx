@@ -13,7 +13,7 @@ const Category = () => {
     e.preventDefault()
     try {
       const data = new FormData(e.target)
-      const res = await addProd(data, {method: 'category'})
+      const res = await addProd(data, 'category')
       toggle()
       e.target.reset()
       toast.dismiss()
