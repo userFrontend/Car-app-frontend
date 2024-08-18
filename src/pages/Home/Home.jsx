@@ -74,7 +74,7 @@ const Home = () => {
                         <span></span>
                     </div>
                     <SlickCarousel speed={1500} sm={1} md={2} lg={3} xl={5}>
-                        {categorys.length > 0 && categorys.map(category => {
+                        {categorys?.length > 0 && categorys.map(category => {
                             return <NavLink key={category._id} to={`/brand/${category._id}`}><img src={`${serverUrl}/${category.categoryImg}`} alt="car_photo" /></NavLink>
                         })}
                     </SlickCarousel>
