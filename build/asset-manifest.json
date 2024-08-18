@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9456bf22.css",
+    "main.js": "/static/js/main.bfd1bff2.js",
+    "static/media/feedback-img-three.svg": "/static/media/feedback-img-three.027bf6f17a9d88a61443adb1512dabac.svg",
+    "static/media/RubikDoodleShadow-Regular.ttf": "/static/media/RubikDoodleShadow-Regular.e0707082a5c4954d7fdd.ttf",
+    "static/media/genesis-car.svg": "/static/media/genesis-car.7cef133956ba2f197a267f56f875e020.svg",
+    "static/media/feedback-img.svg": "/static/media/feedback-img.53fc10fdab7032602ef05230a5c4a678.svg",
+    "static/media/mers-img.png": "/static/media/mers-img.13db611f71d03558bcea.png",
+    "static/media/feedback-img-two.svg": "/static/media/feedback-img-two.462fa2f9cc06063161e0201657c181de.svg",
+    "static/media/audi-img.png": "/static/media/audi-img.2218ed78e0d77ef8f86c.png",
+    "static/media/lambo-img.png": "/static/media/lambo-img.446867045431495d0197.png",
+    "static/media/bmw-img.png": "/static/media/bmw-img.16c6001371fc02912461.png",
+    "static/media/volkswagen.svg": "/static/media/volkswagen.8406ba937b91c5cdc4bb0e0dd3095bf3.svg",
+    "static/media/lambo.svg": "/static/media/lambo.0f6bbe76f10479b3d515c99405853205.svg",
+    "static/media/kia.svg": "/static/media/kia.7527aea5d2b5c5de8d46a1d345a481cb.svg",
+    "static/media/ferrari-img.png": "/static/media/ferrari-img.01324ae6babf6b16cd21.png",
+    "static/media/feedback-img-info-two.svg": "/static/media/feedback-img-info-two.5d993a29b40c7fbb5b7a3d3cf77a22e1.svg",
+    "static/media/feedback-img-info.svg": "/static/media/feedback-img-info.98c98b502ab81946b63a229dfd24ad88.svg",
+    "static/media/not-found.png": "/static/media/not-found.45121ad3e1b3bda4a40a.png",
+    "static/media/model1.svg": "/static/media/model1.e617e563fa26e3cfe82918039f85f7f6.svg",
+    "static/media/model3.svg": "/static/media/model3.a33b0ce3be36c1138108b5b9b369e16c.svg",
+    "static/media/nav-logo.svg": "/static/media/nav-logo.8d6512f72e630c448afae367207f0f28.svg",
+    "static/media/model2.svg": "/static/media/model2.7ecbc4826ec21f1736e1009b4909875e.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/tesla-toy.svg": "/static/media/tesla-toy.8bab5062ebb4b42a2d10fd799aba90fc.svg",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "static/media/bag.svg": "/static/media/bag.94732ce5109f35fc71a9e16f29a576da.svg",
+    "static/media/bus.svg": "/static/media/bus.d3145a7e3d179c84f06b1ad48932504d.svg",
+    "static/media/search-inp.svg": "/static/media/search-inp.a41e30cddc22a9957129629ab89111c1.svg",
+    "main.9456bf22.css.map": "/static/css/main.9456bf22.css.map",
+    "main.bfd1bff2.js.map": "/static/js/main.bfd1bff2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9456bf22.css",
+    "static/js/main.bfd1bff2.js"
+  ]
+}
