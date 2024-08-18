@@ -3,20 +3,20 @@ import './Loader.css'
 
 const Loader = () => {
   return (
-    <div class="pl">
-        <div class="pl__dot"></div>
-        <div class="pl__dot"></div>
-        <div class="pl__dot"></div>
-        <div class="pl__dot"></div>
-        <div class="pl__dot"></div>
-        <div class="pl__dot"></div>
-        <div class="pl__dot"></div>
-        <div class="pl__dot"></div>
-        <div class="pl__dot"></div>
-        <div class="pl__dot"></div>
-        <div class="pl__dot"></div>
-        <div class="pl__dot"></div>
-        <div class="pl__text">Loading…</div>
+    <div className="pl">
+        <div className="pl__dot"></div>
+        <div className="pl__dot"></div>
+        <div className="pl__dot"></div>
+        <div className="pl__dot"></div>
+        <div className="pl__dot"></div>
+        <div className="pl__dot"></div>
+        <div className="pl__dot"></div>
+        <div className="pl__dot"></div>
+        <div className="pl__dot"></div>
+        <div className="pl__dot"></div>
+        <div className="pl__dot"></div>
+        <div className="pl__dot"></div>
+        <div className="pl__text">Loading…</div>
     </div>
   )
 }
