@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import { getOneProd } from '../../api/getRequests'
+import React from 'react'
 import { useInfoContext } from '../../context/InfoContext'
 import Card from '../../components/Card/Card'
 import { useParams } from 'react-router-dom'
