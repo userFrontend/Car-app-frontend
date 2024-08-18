@@ -24,6 +24,7 @@ const Auth = () => {
       localStorage.setItem("profile", JSON.stringify(res?.data.user))
       localStorage.setItem("access_token", res?.data.token)
       setdisButton(false)
+      window.location.replace('/')
   } catch (error) {
       toast.dismiss()
       toast.error(error?.response?.data.message)
@@ -55,7 +56,6 @@ const Auth = () => {
                 <PhoneInput
                 inputStyle={{
                   width:'230px',
-                  border: 'none',
                   borderRadius: '10px',
                   padding: '22px 20px 22px 45px',
                   outline: 'none',
