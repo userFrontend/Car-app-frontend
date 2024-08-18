@@ -14,7 +14,7 @@ const Cars = () => {
     const data = new FormData(e.target)
     data.append('author', currentUser._id)
     try {
-      const res = await addProd(data, {method: 'car'})
+      const res = await addProd(data, 'car')
       toggle()
       e.target.reset()
       toast.dismiss()
@@ -27,6 +27,9 @@ const Cars = () => {
       toast.error(err?.response?.data.message)
     }
   }
+
+  console.log(cars);
+  
 
   return (
    <div className="container">
